@@ -195,7 +195,7 @@
       "array": [
         0,
         0,
-        284.05633244129587,
+        342.0800344948533,
         0,
         0,
         0,
@@ -1387,7 +1387,7 @@
       "ctor": "Float64Array",
       "array": [
         -281.98,
-        235.248,
+        565.419,
         0,
         0,
         0,
@@ -1454,6 +1454,7 @@
     "yellowBullet": {
       "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
     },
+    "enemyLife": 3,
     "shootFrequency": 4,
     "duration": 0.5,
     "moveAmountX": 240,
@@ -2086,8 +2087,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -1,
-        236.04,
+        -18.609,
+        539.798,
         0,
         0,
         0,
@@ -2154,6 +2155,7 @@
     "yellowBullet": {
       "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
     },
+    "enemyLife": 3,
     "shootFrequency": 3,
     "duration": 1,
     "moveAmountX": 320,
@@ -3151,8 +3153,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        283.564,
-        237.624,
+        248.345,
+        585.405,
         0,
         0,
         0,
@@ -3219,6 +3221,7 @@
     "yellowBullet": {
       "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
     },
+    "enemyLife": 3,
     "shootFrequency": 3.5,
     "duration": 0.75,
     "moveAmountX": 290,
@@ -4253,8 +4256,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
-        122.564,
+        -580.508,
+        254.999,
         0,
         0,
         0,

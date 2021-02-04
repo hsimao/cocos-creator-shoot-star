@@ -14,7 +14,6 @@ export default class NewClass extends cc.Component {
 
   // 監聽碰撞
   onCollisionEnter(otherCollider, selfCollider) {
-    console.log("onCollisionEnter");
     // player 跟子彈碰撞
     if (
       otherCollider.name === "player<PolygonCollider>" &&

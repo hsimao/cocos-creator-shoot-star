@@ -13,6 +13,8 @@ export default class NewClass extends cc.Component {
   yellowBullet: cc.Prefab = null;
 
   @property
+  enemyLife: number = 3;
+  @property
   shootFrequency: number = 3.0;
   @property
   duration: number = 0.5;
@@ -39,6 +41,23 @@ export default class NewClass extends cc.Component {
       .easing(cc.easeCircleActionInOut());
 
     return cc.repeatForever(cc.sequence(moveLeft, moveRight));
+  }
+
+  // 監聽碰撞
+  onCollisionEnter(otherCollider, selfCollider) {
+    // 如果碰撞的元素是綠色子彈, 敵機生命扣 1
+    if (otherCollider.name === "greenbullet<PolygonCollider>") {
+      this.enemyLife--;
+      // 如果血扣到剩 0 將自身銷毀
+      if (this.enemyLife === 0) {
+        this.node.destroy();
+      }
+    }
+
+    // 如果碰撞到的是 player, 回到 Menu 場景
+    if (otherCollider.name === "player<PolygonCollider>") {
+      cc.director.loadScene("Menu");
+    }
   }
 
   init() {
