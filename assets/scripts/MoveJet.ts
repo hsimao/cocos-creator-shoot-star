@@ -25,8 +25,13 @@ export default class NewClass extends cc.Component {
   };
 
   init() {
+    // 監聽鍵盤事件
     cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.moveJet, this);
     cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.stopJet, this);
+
+    // 監聽父層 canvas touch 事件
+    this.node.parent.on("touchstart", this.handleTouch, this);
+    this.node.parent.on("touchend", this.handleStopTouch, this);
   }
 
   moveJet(event) {
@@ -81,6 +86,20 @@ export default class NewClass extends cc.Component {
     if (this.direction.down) {
       this.node.setPosition(x, y - 300 * dt);
     }
+  }
+
+  handleTouch(event) {
+    if (event.getLocationX() < this.node.parent.getContentSize().width / 2) {
+      this.direction.left = true;
+    }
+    if (event.getLocationX() > this.node.parent.getContentSize().width / 2) {
+      this.direction.right = true;
+    }
+  }
+
+  handleStopTouch() {
+    this.direction.left = false;
+    this.direction.right = false;
   }
 
   onLoad() {
