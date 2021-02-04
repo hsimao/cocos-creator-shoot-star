@@ -51,7 +51,7 @@ export default class NewClass extends cc.Component {
       this.shootBullets,
       this.shootFrequency,
       cc.macro.REPEAT_FOREVER,
-      0
+      3
     );
 
     cc.director.preloadScene("Menu");
