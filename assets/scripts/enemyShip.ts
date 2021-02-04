@@ -24,6 +24,7 @@ export default class NewClass extends cc.Component {
   moveAmountY: number = 75;
 
   moveEnemy: cc.ActionInterval;
+  playAnimation: boolean = true;
 
   // 創建子彈
   shootBullets() {
@@ -48,9 +49,9 @@ export default class NewClass extends cc.Component {
     // 如果碰撞的元素是綠色子彈, 敵機生命扣 1
     if (otherCollider.name === "greenbullet<PolygonCollider>") {
       this.enemyLife--;
-      // 如果血扣到剩 0 將自身銷毀
-      if (this.enemyLife === 0) {
-        this.node.destroy();
+      // 如果血扣到剩 0, 執行死亡邏輯
+      if (this.enemyLife === 0 && this.playAnimation) {
+        this.handleDie();
       }
     }
 
@@ -58,6 +59,18 @@ export default class NewClass extends cc.Component {
     if (otherCollider.name === "player<PolygonCollider>") {
       cc.director.loadScene("Menu");
     }
+  }
+
+  // 停止移動, 並播放爆炸動畫
+  handleDie() {
+    this.node.stopAllActions(); // 停止移動
+    this.playAnimation = false;
+    this.node.getComponent(cc.Animation).play();
+  }
+
+  // 爆炸動畫結束時會呼叫的方法
+  removeExplosion() {
+    this.node.destroy();
   }
 
   init() {

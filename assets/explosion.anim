@@ -69,5 +69,16 @@
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 0.6833333333333333,
+      "func": "removeExplosion",
+      "params": []
+    }
+  ]
 }
