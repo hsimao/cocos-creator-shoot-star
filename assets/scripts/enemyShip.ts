@@ -14,6 +14,14 @@ export default class NewClass extends cc.Component {
 
   @property
   shootFrequency: number = 3.0;
+  @property
+  duration: number = 0.5;
+  @property
+  moveAmountX: number = 300;
+  @property
+  moveAmountY: number = 75;
+
+  moveEnemy: cc.ActionInterval;
 
   // 創建子彈
   shootBullets() {
@@ -22,9 +30,22 @@ export default class NewClass extends cc.Component {
     this.node.parent.addChild(bullet);
   }
 
+  setMovements() {
+    const moveLeft = cc
+      .moveBy(this.duration, cc.v2(-this.moveAmountX, -this.moveAmountY))
+      .easing(cc.easeCircleActionInOut());
+    const moveRight = cc
+      .moveBy(this.duration, cc.v2(this.moveAmountX, -this.moveAmountY))
+      .easing(cc.easeCircleActionInOut());
+
+    return cc.repeatForever(cc.sequence(moveLeft, moveRight));
+  }
+
   // LIFE-CYCLE CALLBACKS:
 
   onLoad() {
+    this.moveEnemy = this.setMovements();
+    this.node.runAction(this.moveEnemy);
     // 依據 shootFrequency 頻率, 發射子彈
     this.schedule(
       this.shootBullets,

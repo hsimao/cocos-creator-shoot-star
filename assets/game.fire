@@ -751,6 +751,9 @@
       "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
     },
     "shootFrequency": 4,
+    "duration": 0.5,
+    "moveAmountX": 240,
+    "moveAmountY": 75,
     "_id": "2f2LtzjlNPWohkI7sp0yUj"
   },
   {
@@ -862,6 +865,9 @@
       "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
     },
     "shootFrequency": 3,
+    "duration": 1,
+    "moveAmountX": 320,
+    "moveAmountY": 65,
     "_id": "28EvGXwNZGg753dcdJV/Kw"
   },
   {
@@ -973,6 +979,9 @@
       "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
     },
     "shootFrequency": 3.5,
+    "duration": 0.75,
+    "moveAmountX": 290,
+    "moveAmountY": 70,
     "_id": "a5unPiSsVCyYgguaod36lj"
   },
   {
