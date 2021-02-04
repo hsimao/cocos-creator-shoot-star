@@ -16,6 +16,17 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class NewClass extends cc.Component {
+  // bullets
+  @property(cc.Prefab)
+  greenBullet: cc.Prefab = null;
+
+  // 創建子彈
+  shootBullets() {
+    const bullet = cc.instantiate(this.greenBullet);
+    bullet.setPosition(this.node.position.x, this.node.position.y);
+    this.node.parent.addChild(bullet);
+  }
+
   @property
   direction: Direction = {
     left: false,
@@ -32,6 +43,9 @@ export default class NewClass extends cc.Component {
     // 監聽父層 canvas touch 事件
     this.node.parent.on("touchstart", this.handleTouch, this);
     this.node.parent.on("touchend", this.handleStopTouch, this);
+
+    // 每 0.2 秒創建一個子彈
+    this.schedule(this.shootBullets, 0.2, cc.macro.REPEAT_FOREVER, 0);
   }
 
   moveJet(event) {
