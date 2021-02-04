@@ -88,9 +88,6 @@
       },
       {
         "__id__": 12
-      },
-      {
-        "__id__": 13
       }
     ],
     "_prefab": null,
@@ -180,7 +177,7 @@
       "array": [
         0,
         0,
-        384.51527928029077,
+        284.05633244129587,
         0,
         0,
         0,
@@ -438,7 +435,7 @@
       "__id__": 7
     },
     "_enabled": true,
-    "_id": "11Xb9a6jJJ0ruk29T+UNFi"
+    "_id": "9b1FK2CQpNCbNBGomM5UvP"
   },
   {
     "__type__": "cc.Canvas",
@@ -494,15 +491,5 @@
     "_enabled": true,
     "text": "hello",
     "_id": "67FV/oeHJEx4MbIvVWmEqj"
-  },
-  {
-    "__type__": "826cci3RG1HCKagQBkcvGZU",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "_id": "c1u8RaVKBM7blEFdb1yqPN"
   }
 ]
