@@ -10,8 +10,8 @@ const { ccclass } = cc._decorator;
 @ccclass
 export default class NewClass extends cc.Component {
   onLoad() {
-    cc.director.preloadScene("Game");
+    cc.director.preloadScene("game");
 
-    this.node.on("touchstart", () => cc.director.loadScene("Game"), this);
+    this.node.on("touchstart", () => cc.director.loadScene("game"), this);
   }
 }

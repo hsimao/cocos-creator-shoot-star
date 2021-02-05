@@ -71,6 +71,7 @@ export default class NewClass extends cc.Component {
   // 爆炸動畫結束時會呼叫的方法
   removeExplosion() {
     this.node.destroy();
+    this.node.parent.getComponent("game").spawnShips();
   }
 
   init() {
