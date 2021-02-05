@@ -22,6 +22,8 @@ export default class NewClass extends cc.Component {
   moveAmountX: number = 300;
   @property
   moveAmountY: number = 75;
+  @property(cc.AudioClip)
+  explosionAudio: cc.AudioClip = null;
 
   moveEnemy: cc.ActionInterval;
   playAnimation: boolean = true;
@@ -63,6 +65,7 @@ export default class NewClass extends cc.Component {
 
   // 停止移動, 並播放爆炸動畫
   handleDie() {
+    cc.audioEngine.playEffect(this.explosionAudio, false);
     this.node.stopAllActions(); // 停止移動
     this.playAnimation = false;
     this.node.getComponent(cc.Animation).play();

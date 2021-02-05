@@ -57,8 +57,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -18.609,
-        539.798,
+        -35.354,
+        593.381,
         0,
         0,
         0,
@@ -123,13 +123,16 @@
     },
     "_enabled": true,
     "yellowBullet": {
-      "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
+      "__uuid__": "c21e8967-2e53-4e05-ab1c-d35791e65312"
     },
     "enemyLife": 3,
     "shootFrequency": 3,
     "duration": 1,
     "moveAmountX": 320,
     "moveAmountY": 65,
+    "explosionAudio": {
+      "__uuid__": "27104b06-b788-4051-a293-4b382e808d0c"
+    },
     "_id": ""
   },
   {

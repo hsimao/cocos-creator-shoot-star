@@ -120,6 +120,9 @@
     },
     "_enabled": true,
     "bulletSpeed": -500,
+    "hitAudio": {
+      "__uuid__": "8b5730f1-1b30-43ee-8f4f-043729c6b4a0"
+    },
     "_id": ""
   },
   {
@@ -228,7 +231,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "e4lt0G7NdLMKaYaZtBAIC/",
+    "fileId": "bfeQ4nripE6KQuFXJWbq0d",
     "sync": false
   }
 ]

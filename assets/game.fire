@@ -100,6 +100,9 @@
       },
       {
         "__id__": 34
+      },
+      {
+        "__id__": 35
       }
     ],
     "_prefab": null,
@@ -263,7 +266,7 @@
       }
     ],
     "_prefab": null,
-    "_opacity": 150,
+    "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -285,8 +288,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
-        0,
+        -1,
+        -1,
         0,
         0,
         0,
@@ -629,7 +632,7 @@
     },
     "_enabled": true,
     "greenBullet": {
-      "__uuid__": "f0cf7ac4-3826-4d8f-b2b2-4593bed4fda8"
+      "__uuid__": "7f5a0062-a325-4b52-8d5b-4ef8e990ecca"
     },
     "direction": {
       "left": false,
@@ -1451,13 +1454,16 @@
     },
     "_enabled": true,
     "yellowBullet": {
-      "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
+      "__uuid__": "c21e8967-2e53-4e05-ab1c-d35791e65312"
     },
     "enemyLife": 3,
     "shootFrequency": 4,
     "duration": 0.5,
     "moveAmountX": 240,
     "moveAmountY": 75,
+    "explosionAudio": {
+      "__uuid__": "27104b06-b788-4051-a293-4b382e808d0c"
+    },
     "_id": "2f2LtzjlNPWohkI7sp0yUj"
   },
   {
@@ -2039,6 +2045,121 @@
         "__type__": "cc.Vec2",
         "x": 42.5,
         "y": 47
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": 0
       }
     ],
     "_id": "a5Qscoe5xJnpu+E7Yg1dKT"
@@ -2068,7 +2189,7 @@
       "__id__": 14
     },
     "asset": {
-      "__uuid__": "1ed868ff-bcab-4e08-979d-0661ec6655f2"
+      "__uuid__": "24823fbf-b8cc-4418-94c2-c8d79126ea4e"
     },
     "fileId": "0fvQabhsdPTZBGrcDYR/v2",
     "sync": false
@@ -2187,13 +2308,16 @@
     },
     "_enabled": true,
     "yellowBullet": {
-      "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
+      "__uuid__": "c21e8967-2e53-4e05-ab1c-d35791e65312"
     },
     "enemyLife": 3,
     "shootFrequency": 3,
     "duration": 1,
     "moveAmountX": 320,
     "moveAmountY": 65,
+    "explosionAudio": {
+      "__uuid__": "27104b06-b788-4051-a293-4b382e808d0c"
+    },
     "_id": "28EvGXwNZGg753dcdJV/Kw"
   },
   {
@@ -3169,7 +3293,7 @@
       "__id__": 20
     },
     "asset": {
-      "__uuid__": "efab1d1d-6665-4225-9d37-3136c98d8258"
+      "__uuid__": "e84a28de-3515-4ea6-8576-f272266bc09b"
     },
     "fileId": "2fgVA2aHxCt7xkjWjkiR53",
     "sync": false
@@ -3288,13 +3412,16 @@
     },
     "_enabled": true,
     "yellowBullet": {
-      "__uuid__": "aae8ea2c-f28f-41a7-aed7-edcf60f13251"
+      "__uuid__": "c21e8967-2e53-4e05-ab1c-d35791e65312"
     },
     "enemyLife": 3,
     "shootFrequency": 3.5,
     "duration": 0.75,
     "moveAmountX": 290,
     "moveAmountY": 70,
+    "explosionAudio": {
+      "__uuid__": "27104b06-b788-4051-a293-4b382e808d0c"
+    },
     "_id": "a5unPiSsVCyYgguaod36lj"
   },
   {
@@ -4305,7 +4432,7 @@
       "__id__": 26
     },
     "asset": {
-      "__uuid__": "37d961b7-0da2-41c8-94c9-d96499746437"
+      "__uuid__": "332f7217-596e-4152-8ad8-09157657c965"
     },
     "fileId": "074q+ucbpG2oFbHknIB1sP",
     "sync": false
@@ -4363,17 +4490,35 @@
     },
     "_enabled": true,
     "alienship1": {
-      "__uuid__": "1ed868ff-bcab-4e08-979d-0661ec6655f2"
+      "__uuid__": "24823fbf-b8cc-4418-94c2-c8d79126ea4e"
     },
     "alienship2": {
-      "__uuid__": "efab1d1d-6665-4225-9d37-3136c98d8258"
+      "__uuid__": "e84a28de-3515-4ea6-8576-f272266bc09b"
     },
     "alienship3": {
-      "__uuid__": "37d961b7-0da2-41c8-94c9-d96499746437"
+      "__uuid__": "332f7217-596e-4152-8ad8-09157657c965"
     },
     "boss": {
-      "__uuid__": "f859844f-f345-4fcd-af0f-846b671b439e"
+      "__uuid__": "54a073d8-c825-43b8-83da-f1e21998a1aa"
     },
     "_id": "a0J/AtktZAA4n1AGmXCKSj"
+  },
+  {
+    "__type__": "cc.AudioSource",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_clip": {
+      "__uuid__": "f21bd523-78e4-4417-a3b9-538e520ad486"
+    },
+    "_volume": 1,
+    "_mute": false,
+    "_loop": true,
+    "playOnLoad": true,
+    "preload": true,
+    "_id": "1eRjq+f2hFa4sw271t2qfI"
   }
 ]
