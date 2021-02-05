@@ -13,11 +13,11 @@ export default class NewClass extends cc.Component {
   yellowBullet: cc.Prefab = null;
 
   @property
-  enemyLife: number = 3;
+  enemyLife: number = 6;
   @property
   shootFrequency: number = 3.0;
   @property
-  duration: number = 0.5;
+  duration: number = 1;
   @property
   moveAmountX: number = 300;
   @property
@@ -26,10 +26,21 @@ export default class NewClass extends cc.Component {
   moveEnemy: cc.ActionInterval;
   playAnimation: boolean = true;
 
-  // 創建子彈
+  // 創建三顆子彈
   shootBullets() {
+    this.createBullets(this.node.position.x);
+    this.createBullets(
+      this.node.position.x + this.node.getContentSize().width / 2
+    );
+    this.createBullets(
+      this.node.position.x - this.node.getContentSize().width / 2
+    );
+  }
+
+  // 創建子彈
+  createBullets(positionX) {
     const bullet = cc.instantiate(this.yellowBullet);
-    bullet.setPosition(this.node.position.x, this.node.position.y);
+    bullet.setPosition(positionX, this.node.position.y);
     this.node.parent.addChild(bullet);
   }
 
@@ -84,7 +95,7 @@ export default class NewClass extends cc.Component {
       this.shootBullets,
       this.shootFrequency,
       cc.macro.REPEAT_FOREVER,
-      3
+      0
     );
 
     cc.director.preloadScene("Menu");
