@@ -5,13 +5,21 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
 
-const { ccclass } = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class NewClass extends cc.Component {
-  onLoad() {
-    cc.director.preloadScene("Game");
+  @property(cc.AudioClip)
+  clickAudio: cc.AudioClip = null;
 
-    this.node.on("touchstart", () => cc.director.loadScene("Game"), this);
+  handlePlay() {
+    cc.audioEngine.playEffect(this.clickAudio, false);
+    cc.director.loadScene("game");
+  }
+
+  onLoad() {
+    cc.director.preloadScene("game");
+
+    this.node.on("touchstart", this.handlePlay, this);
   }
 }

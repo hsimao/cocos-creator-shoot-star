@@ -54,8 +54,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        0,
-        -165.505,
+        -480,
+        -485.505,
         0,
         0,
         0,
@@ -120,6 +120,9 @@
     },
     "_enabled": true,
     "bulletSpeed": 800,
+    "hitAudio": {
+      "__uuid__": "4846f0c1-35c1-4c24-8593-9b7301cd76ec"
+    },
     "_id": ""
   },
   {
@@ -183,7 +186,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "aeOCAeT4JNiaILh86ESF4m",
+    "fileId": "edWnCmuzRHFa7EQaheqC/t",
     "sync": false
   }
 ]

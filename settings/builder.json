@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "title": "cocos-creator-shoot-star",
+=======
+  "title": "shootStar",
+>>>>>>> fd6586a3aaeb090d1925c99bb8e6f4849900a755
   "packageName": "",
   "startScene": "d3b41edc-6163-4721-976f-95198d526cb4",
   "excludeScenes": [],
@@ -17,7 +21,11 @@
   "optimizeHotUpdate": false,
   "md5Cache": false,
   "encryptJs": true,
+<<<<<<< HEAD
   "xxteaKey": "d616be6b-a493-46",
+=======
+  "xxteaKey": "1afba885-41c6-4e",
+>>>>>>> fd6586a3aaeb090d1925c99bb8e6f4849900a755
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
@@ -39,5 +47,9 @@
     "scheme": "https",
     "skipRecord": false
   },
+<<<<<<< HEAD
   "appBundle": false
+=======
+  "appBundle": true
+>>>>>>> fd6586a3aaeb090d1925c99bb8e6f4849900a755
 }

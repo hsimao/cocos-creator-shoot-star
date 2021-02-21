@@ -11,6 +11,8 @@ const { ccclass, property } = cc._decorator;
 export default class NewClass extends cc.Component {
   @property
   bulletSpeed: number = 0;
+  @property(cc.AudioClip)
+  hitAudio: cc.AudioClip = null;
 
   // 監聽碰撞
   onCollisionEnter(otherCollider, selfCollider) {
@@ -19,6 +21,7 @@ export default class NewClass extends cc.Component {
       otherCollider.name === "player<PolygonCollider>" &&
       selfCollider.name === "Bullet<PolygonCollider>"
     ) {
+      cc.audioEngine.playEffect(this.hitAudio, false);
       cc.director.loadScene("Menu");
     }
 
@@ -27,6 +30,7 @@ export default class NewClass extends cc.Component {
       case "alienship3<PolygonCollider>":
       case "alienship4<PolygonCollider>":
       case "alienship5<PolygonCollider>":
+        cc.audioEngine.playEffect(this.hitAudio, false);
         this.node.destroy();
         break;
     }

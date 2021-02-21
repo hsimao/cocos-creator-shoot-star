@@ -41,7 +41,11 @@
   "excluded-modules": [
     "3D Physics/Builtin"
   ],
+<<<<<<< HEAD
   "last-module-event-record-time": 1613891778601,
+=======
+  "last-module-event-record-time": 1612509917211,
+>>>>>>> fd6586a3aaeb090d1925c99bb8e6f4849900a755
   "design-resolution-width": 960,
   "design-resolution-height": 640,
   "fit-width": false,
